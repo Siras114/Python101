@@ -63,10 +63,6 @@ def show_bill():
     bill_window.geometry("250x250")
     bill_window.title(f'Room {selected_room_no}')
 
-    #if not bills_for_room:
-    #    error_label = tk.Label(bill_window, text="No bill found for selected room")
-    #    error_label.pack()
-    #else:
     room_rent_label = tk.Label(bill_window, text=f'Room Rent: {bills_for_room[0].room_rent}')
     room_rent_label.pack()
     electricity_label = tk.Label(bill_window, text=f'Electricity: {bills_for_room[0].electricity}')
